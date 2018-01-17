@@ -2176,6 +2176,8 @@ func autoConvert_v1alpha1_KubeletConfigSpec_To_kops_KubeletConfigSpec(in *Kubele
 	out.MakeIptablesUtilChains = in.MakeIptablesUtilChains
 	out.CAdvisorPort = in.CAdvisorPort
 	out.ProtectKernelDefaults = in.ProtectKernelDefaults
+	out.TLSCertFile = in.TLSCertFile
+	out.TLSPrivateKeyFile = in.TLSPrivateKeyFile
 	return nil
 }
 
@@ -2244,6 +2246,8 @@ func autoConvert_kops_KubeletConfigSpec_To_v1alpha1_KubeletConfigSpec(in *kops.K
 	out.MakeIptablesUtilChains = in.MakeIptablesUtilChains
 	out.CAdvisorPort = in.CAdvisorPort
 	out.ProtectKernelDefaults = in.ProtectKernelDefaults
+	out.TLSCertFile = in.TLSCertFile
+	out.TLSPrivateKeyFile = in.TLSPrivateKeyFile
 	return nil
 }
 
