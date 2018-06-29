@@ -2642,6 +2642,15 @@ func (in *KubeletConfigSpec) DeepCopyInto(out *KubeletConfigSpec) {
 			**out = **in
 		}
 	}
+	if in.AuthenticationTokenWebhook != nil {
+		in, out := &in.AuthenticationTokenWebhook, &out.AuthenticationTokenWebhook
+		if *in == nil {
+			*out = nil
+		} else {
+			*out = new(bool)
+			**out = **in
+		}
+	}
 	if in.RequireKubeconfig != nil {
 		in, out := &in.RequireKubeconfig, &out.RequireKubeconfig
 		if *in == nil {
