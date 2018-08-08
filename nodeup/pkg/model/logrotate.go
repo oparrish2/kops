@@ -123,7 +123,7 @@ func (b *LogrotateBuilder) addLogRotate(c *fi.ModelBuilderContext, name, path st
 
 	lines := []string{
 		path + "{",
-		"  rotate 5",
+		"  rotate 1",
 		"  copytruncate",
 		"  missingok",
 		"  notifempty",
